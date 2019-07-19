@@ -6,14 +6,20 @@ import "../styles/scss/main.scss";
 import Header from "./Header/Header";
 import Main from "./Main/Main";
 import Footer from "./Footer/Footer";
+import Person from "./Person";
+
+import { MyProvider } from "./MyContext";
+//import MyContext from "./MyContext";
 
 const App = () => {
   return (
-    <div>
-      <Header />
-      <Main />
-      <Footer />
-    </div>
+    <MyProvider>
+      <div>
+        <Header />
+        <Main />
+        <Footer />
+      </div>
+    </MyProvider>
   );
 };
 
