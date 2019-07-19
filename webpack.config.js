@@ -12,7 +12,7 @@ module.exports = {
 
   plugins: [
     new HtmlWepackPlugin({
-      title: "Webpack 4 Starter Pack",
+      title: "My Todos App",
       template: "./src/index.html",
       minify: {
         removeComments: true,

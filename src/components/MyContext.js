@@ -19,17 +19,15 @@ export const MyProvider = props => {
   };
   const [todos, setTodos] = useState(todos1.todos);
 
+  const update = () => {
+    console.log("Updated");
+  };
+
   const handleSubmit = e => {
-    console.log(e.target.children[0].value);
     const input = e.target.children[0].value;
     const newInput = { todo: input, done: false };
-    console.log("New Input:", newInput);
-    console.log("Todos:", todos);
-
-    console.log(todos);
 
     if (input !== "") {
-      console.log(true);
       todos.push(newInput);
       setTodos(todos);
     } else {
@@ -72,7 +70,9 @@ export const MyProvider = props => {
         //fakeState: info,
         handleDone: handleDone,
         handleDelete: handleDelete,
-        handleSubmit: handleSubmit
+        handleSubmit: handleSubmit,
+        update: update
+
         /*growAYearOlder: () => {
           setInfo({ info, age: info.age + 1 });
         }*/

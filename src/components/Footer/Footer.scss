@@ -13,4 +13,11 @@ footer {
   padding-top: 0.7em;
   color: $primaryColor;
   font-weight: 400;
+
+  div {
+    width: 70%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+  }
 }

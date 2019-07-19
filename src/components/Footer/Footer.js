@@ -5,7 +5,14 @@ import "./Footer.scss";
 const Footer = () => {
   return (
     <footer>
-      <p>Ndhote Ilyas &copy; {new Date().getFullYear()}</p>
+      <div>
+        <p>
+          <a href="https://github.com/ilyandho/Todos-App" target="blank">
+            Source
+          </a>
+        </p>
+        <p>Ndhote Ilyas &copy; {new Date().getFullYear()}</p>
+      </div>
     </footer>
   );
 };
